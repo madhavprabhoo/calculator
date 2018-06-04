@@ -1,5 +1,7 @@
 # Simple command line calculator
 
+## Project Goal
+
 A Java program that evaluates expressions in a very simple integer expression language. The program takes an input
  on the command line, computes the result, and prints it to the console. For example:
 
@@ -26,3 +28,14 @@ An expression is one of the of the following:
     let(\<variable name\>, \<value expression\>, \<expression where variable is used\>)
 
 As with arithmetic functions, the value expression and the expression where the variable is used may be an arbitrary expression from this list.
+
+## Running the program
+
+After cloning/downloading the project, make sure you have $JAVA_HOME set and classpath set as follows:
+
+    export CLASSPATH=.:./calc/jars/antlr4-runtime-4.7.1.jar:./calc/jars/calc-1.0-SNAPSHOT.jar
+
+Now you can run the calculator as below:
+
+    $ java calculator.Main "let(a, let(b, 10, add(b, b)), let(b, 20, add(a, b)))"
+    40
