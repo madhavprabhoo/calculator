@@ -33,7 +33,9 @@ As with arithmetic functions, the value expression and the expression where the 
 
 After cloning/downloading the project, make sure you have $JAVA_HOME set and classpath set as follows:
 
+    $ git clone https://github.com/madhavprabhoo/calculator
     $ cd calculator
+    $ git checkout madhav
     $ export CLASSPATH=.:./calc/jars/antlr4-runtime-4.7.1.jar:./calc/jars/calc-1.0-SNAPSHOT.jar:$CLASSPATH
 
 Now you can run the calculator as below:
