@@ -20,7 +20,7 @@ public class EvalVisitor extends CalculatorBaseVisitor<Integer> {
     Map<String, Integer> variables = new HashMap<String, Integer>();
 
     /** Used to print the output */
-	@Override
+    @Override
     public Integer visitEval(CalculatorParser.EvalContext ctx) {
         Integer value = visit(ctx.mathExp()); // evaluate the mathExp child
         LOG.debug("input evaluated to {}", value);          // print value
