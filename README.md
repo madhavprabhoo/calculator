@@ -94,7 +94,7 @@ Solving of expression is done in a "permissive" attempt. The approach for invali
 
 ## Unit Tests
 
-A variety of unit tests, both positive and negative test cases, have been written using JUnit. These can be found in class calculator/calc/src/test/java/calculator/CalculatorTest.java, to perform the tests run the following:
+A variety of unit tests, both positive and negative test cases, have been written using JUnit. These can be found in class [calculator/calc/src/test/java/calculator/CalculatorTest.java](calc/src/test/java/calculator/CalculatorTest.java#L32), to perform the tests run the following:
 
     $ cd calculator/calc
     $ mvn test
