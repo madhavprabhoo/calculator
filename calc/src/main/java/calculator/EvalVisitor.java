@@ -88,7 +88,7 @@ public class EvalVisitor extends CalculatorBaseVisitor<Integer> {
         String id = ctx.ID().getText();
         if ( variables.containsKey(id) ) return variables.get(id);
         // TODO Variable is defined but not used
-        LOG.error("Variable {} not defined, assuming 0 as its value", id);
+        LOG.info("Variable {} not defined, assuming 0 as its value", id);
         return 0;
     }
 }

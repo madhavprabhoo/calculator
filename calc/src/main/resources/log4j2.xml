@@ -9,7 +9,7 @@
     </File>
   </Appenders>
   <Loggers>
-    <Logger name="calculator" level="WARN">
+    <Logger name="calculator" level="ERROR">
       <AppenderRef ref="File"/>
     </Logger>
     <Root level="error">
