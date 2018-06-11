@@ -18,7 +18,7 @@ Few more examples:
     let(a, 5, let(b, mult(a, 10), add(b, a)))                    55
     let(a, let(b, 10, add(b, b)), let(b, 20, add(a, b))          40
 
-An expression is one of the of the following:
+An expression is one of the following:
 * Numbers: integers between Integer.MIN_VALUE and Integer.MAX_VALUE
 * Variables: strings of characters, where each character is one of a-z, A-Z
 * Arithmetic functions: add, sub, mult, div, each taking two arbitrary expressions as arguments. In other words, each argument may be any of the expressions on this list.
@@ -62,7 +62,7 @@ Examples of using logging levels:
 ## Installation
 
 ### Cloning and setting up environment
-Clone the project as follows:
+Clone project as follows:
 
     $ git clone https://github.com/madhavprabhoo/calculator.git
     
@@ -71,7 +71,7 @@ Make sure you have $JAVA_HOME (Java 1.8) and $CLASSPATH set, here is an example 
     $ cd calculator/calc
     $ export CLASSPATH=.:./jars/calc-1.0-SNAPSHOT-jar-with-dependencies.jar:$CLASSPATH
 
-Now you can run the calculator as below:
+Now you can run calculator as below:
 
     $ java calculator.Main "let(a, let(b, 10, add(b, b)), let(b, 20, add(a, b)))"
     40
@@ -90,11 +90,11 @@ Development was done on CentOS 6, the following open source software was used
     
 ## Notes
 
-Solving of expression is done in a "permissive" attempt. The approach for invalid expressions was to make a best attempt with the given information. Provide an answer for the portion of the expression which can be solved, make assumptions, log them at level info, and make as much progress as possible.
+Solving of expression is done in a "permissive" manner. The approach for invalid expressions was to make the best attempt with given information. Provide an answer for portion of the expression which can be solved, make assumptions, log them at level info, and make as much progress as possible.
 
 ## Unit Tests
 
-A variety of unit tests, both positive and negative test cases, have been written using JUnit. These can be found in class [calculator/calc/src/test/java/calculator/CalculatorTest.java](calc/src/test/java/calculator/CalculatorTest.java#L32), to perform the tests run the following:
+A variety of unit tests, both positive and negative test cases, have been written using JUnit. These can be found in class [calculator/calc/src/test/java/calculator/CalculatorTest.java](calc/src/test/java/calculator/CalculatorTest.java#L32), to perform the tests run following:
 
     $ cd calculator/calc
     $ mvn test
