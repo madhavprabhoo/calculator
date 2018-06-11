@@ -90,7 +90,7 @@ Development was done on CentOS 6, the following open source software was used
     
 ## Notes
 
-Solving of expression is done in a "permissive" attempt. The approach for invalid expressions was to make a best attempt with the given information, and provide an answer the portion of the expression which can be solved, make assumption and log them as at level info to make progress.
+Solving of expression is done in a "permissive" attempt. The approach for invalid expressions was to make a best attempt with the given information. Provide an answer for the portion of the expression which can be solved, make assumptions, log them at level info, and make as much progress as possible.
 
 ## Unit Tests
 
